@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소에 box-sizing 설정 */
+      * {
+        box-sizing: border-box;
+      }
+      /* header 요소 : 배경색#333, 안쪽여백30, 가운데정렬, 글꼴크기35, 글자색흰색 */
+      header {
+        background: #333;
+        padding: 30px;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+      }
+      /* nav 요소 : 높이500, 배경색#ccc, 안쪽여백20 */
+      nav {
+        height: 500px;
+        background: #ccc;
+        padding: 20px;
+        float: left;
+        width: 30%;
+      }
+      /* article 요소 : 높이500, 배경색#f1f1f1, 안쪽여백20 */
+      article {
+        height: 500px;
+        background: #f1f1f1;
+        padding: 20px;
+        float: left;
+        width: 70%;
+      }
+      /* footer 요소 : 배경색#777, 안쪽여백10, 가운데정렬, 글자색흰색 */
+      footer {
+        background-color: #777;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Cities</h2>
+    </header>
+    <section class="clearfix">
+      <nav>
+        <ul>
+          <li><a href="#">London</a></li>
+          <li><a href="#">Paris</a></li>
+          <li><a href="#">Tokyo</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>London</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat nisi laborum culpa libero eveniet eaque eius maiores. Omnis iure
+          reiciendis accusamus incidunt tempore magnam minus, quasi delectus, facere perferendis nihil.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus rem, veritatis excepturi velit adipisci quis laboriosam delectus nulla
+          maiores officiis quam fuga quasi architecto illum accusantium perspiciatis officia cum, neque vitae culpa sit? Quas earum fugit tenetur,
+          culpa repudiandae aut! Id reiciendis, suscipit voluptas esse ullam a, laboriosam doloremque fugiat nihil inventore ipsum rem saepe laborum
+          molestias quod nam amet itaque cumque quaerat excepturi soluta, unde sed enim exercitationem! Amet rem, quas quasi voluptates accusantium
+          illum culpa quae! Voluptates vel harum reprehenderit veritatis, dicta distinctio. Corrupti, quod minima dolores consequuntur quae illum.
+          Atque, a unde eligendi et cumque sequi consequuntur.
+        </p>
+      </article>
+    </section>
+    <footer>
+      <p>Footer</p>
+    </footer>
+  </body>
+</html>
