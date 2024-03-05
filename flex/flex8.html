@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* 전체 요소 크기 산정시 border 포함 */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* body 배경색  #ecf0f1 */
+      body {
+        background: #ecf0f1;
+      }
+
+      /* wrapper max-width60rem width100% margin 2rem auto */
+      .wrapper {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+
+      /* flexbg flex 컨테이너 설정 */
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        /* 배경색 흰색 width60% padding1.618rem */
+        background: white;
+        width: 60%;
+        padding: 1.618rem;
+        order: 2;
+      }
+      .flexbg .sidebar {
+        /* sidebar  width20% padding1.618rem */
+        width: 20%;
+        padding: 1.618rem;
+        color: white;
+      }
+
+      .flexbg .left {
+        /* 배경색 #3498db */
+        background: #3498db;
+        order: 1;
+      }
+      .flexbg .right {
+        /* 배경색 #34495e */
+        background: #34495e;
+        order: 3;
+      }
+
+      /* 481~768 */
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+
+      /* 0~480 */
+      @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper flexbg">
+      <main>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolorem tenetur veniam totam magni placeat excepturi rem quo? Libero non
+          necessitatibus incidunt maxime ab asperiores voluptatum ducimus, modi error fugiat. Nulla earum, iste quam ea dicta debitis facilis
+          corrupti, amet autem nesciunt totam quos odit. Nemo eligendi repellendus, veritatis sunt tenetur optio cupiditate dolor amet minus
+          assumenda, minima natus reprehenderit ea. Delectus eum fugiat voluptates explicabo beatae alias commodi cumque tempora omnis pariatur esse
+          odio totam perferendis repudiandae consequatur, doloribus libero architecto, quos exercitationem minus! Ex officiis quas fugiat. Deserunt
+          minus ipsum unde provident quis quae debitis velit iste libero.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae dolorem tenetur veniam totam magni placeat excepturi rem quo? Libero non
+          necessitatibus incidunt maxime ab asperiores voluptatum ducimus, modi error fugiat. Nulla earum, iste quam ea dicta debitis facilis
+          corrupti, amet autem nesciunt totam quos odit. Nemo eligendi repellendus, veritatis sunt tenetur optio cupiditate dolor amet minus
+          assumenda, minima natus reprehenderit ea. Delectus eum fugiat voluptates explicabo beatae alias commodi cumque tempora omnis pariatur esse
+          odio totam perferendis repudiandae consequatur, doloribus libero architecto, quos exercitationem minus! Ex officiis quas fugiat. Deserunt
+          minus ipsum unde provident quis quae debitis velit iste libero.
+        </p>
+      </main>
+      <aside class="sideber left">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis aliquam suscipit cupiditate laboriosam ad iure adipisci! Aperiam,
+          obcaecati. Voluptates et libero unde autem quibusdam reprehenderit suscipit sunt non in, distinctio, aperiam perspiciatis necessitatibus
+          excepturi harum alias, adipisci velit officiis. Corrupti laboriosam perferendis et veniam autem dolores sint distinctio tenetur!
+        </p>
+      </aside>
+      <aside class="sideber right">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. At perferendis aliquam suscipit cupiditate laboriosam ad iure adipisci! Aperiam,
+          obcaecati. Voluptates et libero unde autem quibusdam reprehenderit suscipit sunt non in, distinctio, aperiam perspiciatis necessitatibus
+          excepturi harum alias, adipisci velit officiis. Corrupti laboriosam perferendis et veniam autem dolores sint distinctio tenetur!
+        </p>
+      </aside>
+    </div>
+  </body>
+</html>
